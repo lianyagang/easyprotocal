@@ -44,5 +44,5 @@ dependencies {
     implementation project(':moduleA')
     implementation project(':moduleB')
 
-    api 'com.github.lianyagang1347.Protocol:protocol:1.0.0'
+    api project(':protocol')
 }
