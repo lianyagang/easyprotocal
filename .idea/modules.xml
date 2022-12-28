@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Protocol.iml" filepath="$PROJECT_DIR$/.idea/Protocol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Protocol.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Protocol.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Protocol.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Protocol.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Protocol.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Protocol.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Protocol.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Protocol.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/moduleA/Protocol.moduleA.iml" filepath="$PROJECT_DIR$/.idea/modules/moduleA/Protocol.moduleA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/moduleA/Protocol.moduleA.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/moduleA/Protocol.moduleA.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/moduleA/Protocol.moduleA.main.iml" filepath="$PROJECT_DIR$/.idea/modules/moduleA/Protocol.moduleA.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/moduleA/Protocol.moduleA.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/moduleA/Protocol.moduleA.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/moduleB/Protocol.moduleB.iml" filepath="$PROJECT_DIR$/.idea/modules/moduleB/Protocol.moduleB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/moduleB/Protocol.moduleB.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/moduleB/Protocol.moduleB.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/moduleB/Protocol.moduleB.main.iml" filepath="$PROJECT_DIR$/.idea/modules/moduleB/Protocol.moduleB.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/moduleB/Protocol.moduleB.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/moduleB/Protocol.moduleB.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/protocol/Protocol.protocol.iml" filepath="$PROJECT_DIR$/.idea/modules/protocol/Protocol.protocol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/protocol-annotation/Protocol.protocol-annotation.iml" filepath="$PROJECT_DIR$/.idea/modules/protocol-annotation/Protocol.protocol-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/protocol-annotation/Protocol.protocol-annotation.main.iml" filepath="$PROJECT_DIR$/.idea/modules/protocol-annotation/Protocol.protocol-annotation.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/protocol-annotation/Protocol.protocol-annotation.test.iml" filepath="$PROJECT_DIR$/.idea/modules/protocol-annotation/Protocol.protocol-annotation.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/protocol-compiler/Protocol.protocol-compiler.iml" filepath="$PROJECT_DIR$/.idea/modules/protocol-compiler/Protocol.protocol-compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/protocol-compiler/Protocol.protocol-compiler.main.iml" filepath="$PROJECT_DIR$/.idea/modules/protocol-compiler/Protocol.protocol-compiler.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/protocol-compiler/Protocol.protocol-compiler.test.iml" filepath="$PROJECT_DIR$/.idea/modules/protocol-compiler/Protocol.protocol-compiler.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/protocol/Protocol.protocol.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/protocol/Protocol.protocol.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/protocol/Protocol.protocol.main.iml" filepath="$PROJECT_DIR$/.idea/modules/protocol/Protocol.protocol.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/protocol/Protocol.protocol.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/protocol/Protocol.protocol.unitTest.iml" />
+    </modules>
+  </component>
+</project>
