@@ -11,6 +11,10 @@ import java.lang.reflect.Proxy;
  */
 public final class ProtocolFactory {
 
+    public static ProtocolFactory getInstance() {
+        return Instance.instance;
+    }
+
     /**
      * 动态代理 + 反射
      *
@@ -29,17 +33,18 @@ public final class ProtocolFactory {
                 if (protocolImplClass == null || protocol == null) {
                     return null;
                 }
-                return protocolImplClass.getMethod(method.getName(), method.getParameterTypes()).invoke(protocol, args);
+                try {
+                    return protocolImplClass.getMethod(method.getName(), method.getParameterTypes()).invoke(protocol, args);
+                } catch (Exception exception) {
+                    Log.e("ProtocolFactory", "未找到实现类定义的方法: " + method.getName());
+                }
+                return null;
             }
         });
     }
 
     private static class Instance {
         private final static ProtocolFactory instance = new ProtocolFactory();
-    }
-
-    public static ProtocolFactory getInstance() {
-        return Instance.instance;
     }
 
 }

@@ -13,7 +13,7 @@ class AModuleActivity : FragmentActivity() {
         setContentView(R.layout.activity_a)
 
         findViewById<View>(R.id.button).setOnClickListener {
-            Toast.makeText(this, ProtocolFactory.getInstance().invoke(TestProtocol::class.java).data, Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, ProtocolFactory.getInstance().invoke(TestProtocol::class.java).test, Toast.LENGTH_SHORT).show()
         }
     }
 }

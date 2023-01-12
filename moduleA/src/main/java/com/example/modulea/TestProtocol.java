@@ -12,5 +12,5 @@ import com.protocol.annotation.Protocol;
 public interface TestProtocol {
 
     String getData();
-
+    String getTest();
 }
