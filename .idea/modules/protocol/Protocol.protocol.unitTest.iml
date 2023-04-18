@@ -26,6 +26,7 @@
     <content url="file://$MODULE_DIR$/../../../protocol/src/testDebug" />
     <orderEntry type="jdk" jdkName="Android API 31 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Protocol.protocol-annotation.main" scope="TEST" />
     <orderEntry type="module" module-name="Protocol.protocol.main" scope="TEST" />
   </component>
   <component name="TestModuleProperties" production-module="Protocol.protocol.main" />
