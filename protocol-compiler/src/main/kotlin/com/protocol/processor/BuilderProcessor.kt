@@ -32,8 +32,11 @@ class BuilderProcessor(
                     //找到ProtocolImpl注解的参数value
                     val resValue =
                         data.arguments.find { argument -> argument.name?.asString() == "value" }?.value?.toString()
+                    if (resValue != null) {
+                        logger.error("protocolImplSet找到了====$resValue")
+                        createProtocolImpl(resValue, it.simpleName.asString())
+                    }
 
-                    createProtocol(resValue!!, it.simpleName.asString())
                 }
             }
         protocolSet
@@ -45,8 +48,11 @@ class BuilderProcessor(
                     //找到ProtocolImpl注解的参数value
                     val resValue =
                         data.arguments.find { argument -> argument.name?.asString() == "value" }?.value?.toString()
+                    if (resValue != null) {
+                        logger.error("protocolSet找到了====$resValue")
+                        createProtocol(resValue, it.simpleName.asString())
+                    }
 
-                    createProtocolImpl(resValue!!, it.simpleName.asString())
                 }
             }
 

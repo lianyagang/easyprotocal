@@ -1,6 +1,11 @@
+plugins {
+    id 'kotlin'
+    id 'org.jetbrains.kotlin.jvm'
+}
+
 apply plugin: 'java-library'
 //apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.lianyagang'
+group = 'com.github.lianyagang'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -10,6 +15,7 @@ dependencies {
 
     api project(':protocol-annotation')
 }
+
 
 compileJava {
     sourceCompatibility = '1.8'

@@ -2,12 +2,12 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
-      <module name="Protocol.app" target="11" />
+      <module name="Protocol.app" target="17" />
       <module name="Protocol.compiler" target="1.8" />
       <module name="Protocol.framework" target="15" />
-      <module name="Protocol.moduleA" target="11" />
-      <module name="Protocol.moduleB" target="11" />
-      <module name="Protocol.protocol" target="11" />
+      <module name="Protocol.moduleA" target="17" />
+      <module name="Protocol.moduleB" target="17" />
+      <module name="Protocol.protocol" target="17" />
       <module name="Protocol.protocol-compiler" target="1.8" />
       <module name="Protocol.protocol-compiler.main" target="1.8" />
       <module name="Protocol.protocol-compiler.test" target="1.8" />
