@@ -31,11 +31,11 @@ class ProtocolSymbolProcessor(private val environment: SymbolProcessorEnvironmen
     override fun process(resolver: Resolver): List<KSAnnotated> {
         val protocolList = resolver.getSymbolsWithAnnotation(Protocol::class.qualifiedName.orEmpty())
             .filterIsInstance<KSClassDeclaration>()
-            .filter(KSNode::validate)
+//            .filter(KSNode::validate)
             .toList()
         val protocolImplList = resolver.getSymbolsWithAnnotation(ProtocolImpl::class.qualifiedName.orEmpty())
             .filterIsInstance<KSClassDeclaration>()
-            .filter(KSNode::validate)
+//            .filter(KSNode::validate)
             .toList()
         if (protocolList.isNotEmpty()) {
             createProtocol(protocolList)
