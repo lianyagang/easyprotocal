@@ -10,7 +10,7 @@ group = 'com.github.lianyagang'
 
 dependencies {
     implementation 'com.squareup:kotlinpoet-ksp:1.13.0'
-    implementation 'com.google.devtools.ksp:symbol-processing-api:1.8.20-1.0.10'
+    implementation 'com.google.devtools.ksp:symbol-processing-api:1.7.20-1.0.8'
     implementation project(':protocol-annotation')
 
 
