@@ -14,7 +14,8 @@ class AModuleActivity : FragmentActivity() {
         setContentView(R.layout.activity_a)
 
         findViewById<View>(R.id.button).setOnClickListener {
-            val data = ProtocolFactory.getInstance().invoke(TestProtocol::class.java).test
+            val data = ProtocolFactory.getInstance().invoke(TestProtocol::class.java).data
+
             if (data == null) {
                 Toast.makeText(this, "没有找到data", Toast.LENGTH_SHORT).show()
             } else {
