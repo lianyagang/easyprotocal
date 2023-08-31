@@ -5,6 +5,8 @@ group='com.github.lianyagang'
 android {
     compileSdkVersion 31
 
+    namespace 'com.protocol.core'
+
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 31
@@ -22,8 +24,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = '1.8'
-        targetCompatibility = '1.8'
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 }
 
