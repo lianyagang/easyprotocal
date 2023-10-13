@@ -6,7 +6,7 @@ plugins {
 apply plugin: 'kotlin'
 
 
-group = 'com.github.larboy1991'
+group = 'com.github.lianyagang'
 
 dependencies {
     implementation 'com.squareup:kotlinpoet-ksp:1.13.0'
@@ -29,7 +29,6 @@ java {
 publishing {
     publications {
         maven(MavenPublication) {
-//            groupId = GROUP_ID
             artifactId = 'protocol-compiler'
             from components.java
         }
