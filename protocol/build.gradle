@@ -5,6 +5,8 @@ group='com.github.lianyagang'
 android {
     compileSdkVersion 31
 
+    namespace 'com.protocol.core'
+
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 31
@@ -22,13 +24,58 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = '1.8'
-        targetCompatibility = '1.8'
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
+
+    publishing {
+        singleVariant('release') {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     api project(':protocol-annotation')
+}
+
+// 源代码一起打包
+task androidSourcesJar(type: Jar) {
+    archiveClassifier.set('sources')
+//    from android.sourceSets.main.java.sourceFiles
+    from android.sourceSets.main.java.srcDirs
+}
+artifacts {
+    archives androidSourcesJar
+}
+
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            artifact androidSourcesJar
+            groupId = GROUP_ID
+            artifactId = 'protocol'
+            afterEvaluate { artifact(tasks.getByName("bundleReleaseAar")) }
+
+            pom.withXml {
+                def dependenciesNode = asNode().appendNode('dependencies')
+                configurations.implementation.allDependencies.each {
+                    // 避免出现空节点或 artifactId=unspecified 的节点
+                    if (it.group != null && (it.name != null && "unspecified" != it.name) && it.version != null) {
+                        println it.toString()
+                        def dependencyNode = dependenciesNode.appendNode('dependency')
+                        dependencyNode.appendNode('groupId', it.group)
+                        dependencyNode.appendNode('artifactId', it.name)
+                        dependencyNode.appendNode('version', it.version)
+                        dependencyNode.appendNode('scope', 'implementation')
+                    }
+                }
+            }
+        }
+    }
 }
