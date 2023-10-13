@@ -14,7 +14,6 @@ compileJava {
 publishing {
     publications {
         maven(MavenPublication) {
-            groupId = GROUP_ID
             artifactId = 'protocol-annotation'
             from components.java
         }
