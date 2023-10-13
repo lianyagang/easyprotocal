@@ -58,7 +58,7 @@ publishing {
     publications {
         maven(MavenPublication) {
             artifact androidSourcesJar
-            groupId = GROUP_ID
+//            groupId = GROUP_ID
             artifactId = 'protocol'
             afterEvaluate { artifact(tasks.getByName("bundleReleaseAar")) }
 
