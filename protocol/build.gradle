@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
-group='com.github.lianyagang'
+group='com.github.larboy1991'
 
 android {
     compileSdkVersion 31
