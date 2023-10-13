@@ -60,7 +60,6 @@ publishing {
             artifact androidSourcesJar
             groupId = GROUP_ID
             artifactId = 'protocol'
-            version = VERSION
             afterEvaluate { artifact(tasks.getByName("bundleReleaseAar")) }
 
             pom.withXml {
