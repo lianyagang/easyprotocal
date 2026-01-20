@@ -4,14 +4,14 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 36
 
     namespace 'com.protocol.core.sample'
 
     defaultConfig {
         applicationId "com.protocol.core.sample"
         minSdk 21
-        targetSdk 31
+        targetSdk 36
         versionCode 1
         versionName "1.0"
 
