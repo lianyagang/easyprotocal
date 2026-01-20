@@ -11,4 +11,11 @@
         android:text="获取模块B的数据"
         app:layout_constraintTop_toTopOf="parent"/>
 
+    <Button
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取模块B的数据"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

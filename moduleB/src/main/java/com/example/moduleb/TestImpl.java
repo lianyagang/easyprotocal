@@ -14,5 +14,8 @@ public class TestImpl {
     public String getData(String string) {
         return "来自模块B的数据"+string;
     }
+    public String getData1(String string) {
+        return "来自模块B的数据"+string;
+    }
 
 }

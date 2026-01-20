@@ -21,5 +21,14 @@ class AModuleActivity : FragmentActivity() {
                 Toast.makeText(this, data, Toast.LENGTH_SHORT).show()
             }
         }
+
+        findViewById<View>(R.id.button1).setOnClickListener {
+            val data = ProtocolFactory.getInstance().invoke(TestProtocol1::class.java).getData1("整合的ok")
+            if (data == null) {
+                Toast.makeText(this, "没有找到data", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, data, Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 }

@@ -1,17 +1,18 @@
 package com.protocol.processor
 
-import com.google.devtools.ksp.processing.SymbolProcessor
-import com.google.devtools.ksp.processing.SymbolProcessorEnvironment
-import com.google.devtools.ksp.processing.SymbolProcessorProvider
+import com.google.devtools.ksp.processing.*
 
 /**
- * 注解处理器提供者
  *
- * @author HB.zhuanghngzhan
- * @date 2023-04-18
+ * KSP 通过它实例化真正的 SymbolProcessor
  */
+
+
 class ProtocolSymbolProcessorProvider : SymbolProcessorProvider {
-    override fun create(environment: SymbolProcessorEnvironment): SymbolProcessor {
+    override fun create(
+        environment: SymbolProcessorEnvironment
+    ): SymbolProcessor {
         return ProtocolSymbolProcessor(environment)
     }
 }
+
